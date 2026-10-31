@@ -2,6 +2,9 @@
 
 Tootejuhi kodutöö „Koolitus sai läbi. Mis saab edasi?“ veebiversioon. Disain põhineb Figma prototüübil.
 
+**Klikitav demo:** https://metuzaladev.github.io/ai-eesti-academy/ (staatiline koopia, vorme ei salvestata)
+**Figma prototüüp:** https://www.figma.com/proto/nzWNLZelE9tCHcuwMAACyF?node-id=28-2&starting-point-node-id=28%3A2
+
 Enne koolitust kaardistatakse iga töötaja baasjoon ja kitsaskohad. Pärast koolitust näitab Academy, mis päriselt muutus:
 
 - **Tiimiliige** näeb oma kursusi, koolitaja lisatud materjale ja oskuste kaarti, teeb harjutusi ja lisab enne/pärast lugusid.
@@ -70,6 +73,17 @@ Better Authi tabelid: `user`, `session`, `organization`, `member`, `team`, `team
 Academy tabelid (`scripts/schema.sql`): `course`, `skill`, `user_skill`, `bottleneck`, `survey_response`, `story`, `pulse`, `material`, `material_done`, `org_settings`.
 
 Kitsaskoha praegune seis arvutatakse: **baasjoon − seotud enne/pärast lugudega säästetud aeg**. Nii klapivad juhi ja omaniku numbrid alati omavahel.
+
+## Demo uuendamine (GitHub Pages)
+
+GitHub Pages näitab ainult staatilisi faile, seega demo on töötava rakenduse koopia. Generaator logib iga rolliga sisse, salvestab lehed HTML-ina ja kirjutab lingid failide vahel ümber. Harjutuse kontroll töötab brauseris, vormid näitavad demoteadet.
+
+```sh
+npm run db:seed && npm run build && npm run start   # üks aken
+npm run demo:build                                  # teine aken, tulemus kaustas .demo-out
+```
+
+`.demo-out` sisu avaldatakse harusse `gh-pages`.
 
 ## Mis on MVP-st teadlikult välja jäetud
 

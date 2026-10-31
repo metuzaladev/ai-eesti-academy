@@ -43,3 +43,6 @@ next-env.d.ts
 # SQLite andmebaas
 /data
 !.env.example
+
+# Staatiline demo (avaldatakse gh-pages harus)
+/.demo-out

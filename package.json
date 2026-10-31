@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "db:seed": "rm -rf data && tsx scripts/seed.ts"
+    "db:seed": "rm -rf data && tsx scripts/seed.ts",
+    "demo:build": "node scripts/build-static-demo.mjs .demo-out"
   },
   "dependencies": {
     "better-auth": "^1.7.14",
