@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="et" data-scroll-behavior="smooth" class="mVpuSG_variable a8vbQG_variable"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../_next/static/chunks/2esblawibb3st.css" data-precedence="next"/><title>AI Eesti Academy</title><meta name="description" content="Oskused ja mõju pärast koolitust"/><link rel="icon" href="../favicon.ico" sizes="48x48" type="image/x-icon"/><meta name="next-size-adjust" content=""/>
+<script>
+// Liikumise suund: paremal olev vaheleht = edasi, vasakul = tagasi
+document.addEventListener("click", function (e) {
+  var a = e.target.closest && e.target.closest("a"); if (!a) return;
+  var tabs = Array.prototype.slice.call(document.querySelectorAll(".tabs a"));
+  var i = tabs.indexOf(a), cur = tabs.findIndex(function (t) { return t.classList.contains("on"); });
+  try { sessionStorage.setItem("vt", i >= 0 && cur > i ? "nav-back" : "nav-forward"); } catch (_) {}
+});
+window.addEventListener("pagereveal", function (e) {
+  var d; try { d = sessionStorage.getItem("vt"); sessionStorage.removeItem("vt"); } catch (_) {}
+  if (e.viewTransition && d) e.viewTransition.types.add(d);
+});
+</script>
+<style>
+@view-transition { navigation: auto; }
+main.wrap { view-transition-name: page; }
+::view-transition-old(page) { animation: 150ms ease-in both vt-fade reverse; }
+::view-transition-new(page) { animation: 260ms ease-out 100ms both vt-fade, 400ms ease-out both vt-rise; }
+html:active-view-transition-type(nav-forward)::view-transition-old(page) { --slide-offset: -60px; animation: 150ms ease-in both vt-fade reverse, 400ms ease-in-out both vt-slide reverse; }
+html:active-view-transition-type(nav-forward)::view-transition-new(page) { --slide-offset: 60px; animation: 210ms ease-out 150ms both vt-fade, 400ms ease-in-out both vt-slide; }
+html:active-view-transition-type(nav-back)::view-transition-old(page) { --slide-offset: 60px; animation: 150ms ease-in both vt-fade reverse, 400ms ease-in-out both vt-slide reverse; }
+html:active-view-transition-type(nav-back)::view-transition-new(page) { --slide-offset: -60px; animation: 210ms ease-out 150ms both vt-fade, 400ms ease-in-out both vt-slide; }
+.demo-pill { position: fixed; left: 16px; bottom: 16px; z-index: 50; display: flex; gap: 10px; align-items: center; background: #141418; color: #fff; border-radius: 999px; padding: 8px 8px 8px 16px; font-size: 12px; box-shadow: 0 8px 24px rgba(20,20,40,.25); }
+.demo-pill a { background: #fff; color: #141418; border-radius: 999px; padding: 6px 12px; font-weight: 600; }
+.demo-toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 60; background: #141418; color: #fff; border-radius: 12px; padding: 12px 18px; font-size: 13px; opacity: 0; transition: opacity .2s; pointer-events: none; max-width: 90vw; }
+.demo-toast.on { opacity: 1; }
+</style></head><body><div hidden=""><!--$--><!--/$--></div><header class="top"><div class="logo"><span class="ai">AI</span><span class="ee">EESTI</span></div><div class="sep"></div><div class="prod">Academy</div><nav class="tabs"><a class="tab" href="kursused.html">Minu kursused</a><a class="tab on" href="oskused.html">Minu oskused</a><a class="tab" href="tiim.html">Tiimi oskused</a><a class="tab" href="kusitlus.html">Enne koolitust</a></nav><div class="spacer"></div><div class="user"><div class="who"><b>Rasmus Kask</b><span class="muted">Tiimiliige<!-- --> · <!-- -->Põhjarannik Grupp</span></div><div class="avatar" style="background:#F2DE7C">RK</div><form action="" encType="multipart/form-data" method="POST"><input type="hidden" name="$ACTION_ID_00c7da064a50e7dff9b48e928464877792f9bb6889"/><button class="linkbtn" type="submit">Logi välja</button></form></div></header><main class="wrap"><div vt-update="none"><div class="eyebrow" style="margin-top:44px">Põhjarannik Grupp<!-- --> · Müük ja kliendisuhted</div><h1 class="title">Tere, <!-- -->Rasmus<!-- -->. Siin on sinu <span class="blue">oskused</span>.</h1><p class="lead">Iga oskus liigub tasemelt „Tean“ tasemele „Õpetan teisi“, kui näitad, et kasutad seda päriselt oma töös.</p><div class="kpis"><div class="kpi"><div class="label">Oskusi tööl kasutusel</div><div class="num">3<!-- --> / <!-- -->6</div></div><div class="kpi"><div class="label">Enne/pärast lugusid</div><div class="num">3</div><div class="delta">viimane 29. okt</div></div><div class="kpi lime"><div class="label">Sinu aja kokkuhoid</div><div class="num">~<!-- -->15<!-- --> h / kuus</div><div class="delta" style="color:#3D4A12">sinu lugude põhjal</div></div></div><div class="grid"><div class="col-main"><div class="card"><h3>Oskuste kaart</h3><p class="sub">Tase tõuseb tõendiga: tund → praktiline ülesanne → enne/pärast lugu tööst → aitasid kolleegi.</p><div class="skill"><div class="name"><b>Promptimine</b><span>Head juhised, kontekst, roll</span></div><div class="levels"><div class="lv done"><i></i><small>Tean</small></div><div class="lv done"><i></i><small>Oskan</small></div><div class="lv done"><i></i><small>Kasutan</small></div><div class="lv done"><i></i><small>Õpetan</small></div></div><div class="evid">„Kliendikirja mall“: 15 min → 5 min</div><span class="pill ok">Tase <!-- -->4</span></div><div class="skill"><div class="name"><b>Dokumentide analüüs</b><span>Lepingud, pakkumised, aruanded</span></div><div class="levels"><div class="lv done"><i></i><small>Tean</small></div><div class="lv done"><i></i><small>Oskan</small></div><div class="lv done"><i></i><small>Kasutan</small></div><div class="lv"><i></i><small>Õpetan</small></div></div><div class="evid">„Hankedokumentide võrdlus“: 120 min → 25 min</div><span class="pill lvlpill">Tase <!-- -->3</span></div><div class="skill"><div class="name"><b>Cowork oma failidega</b><span>Töö kaustade ja failidega</span></div><div class="levels"><div class="lv done"><i></i><small>Tean</small></div><div class="lv done"><i></i><small>Oskan</small></div><div class="lv done"><i></i><small>Kasutan</small></div><div class="lv"><i></i><small>Õpetan</small></div></div><div class="evid">„Kliendipakkumise koostamine“: 180 min → 40 min</div><span class="pill lvlpill">Tase <!-- -->3</span></div><div class="skill"><div class="name"><b>Skillid</b><span>Korduvad töövood ühe käsuga</span></div><div class="levels"><div class="lv done"><i></i><small>Tean</small></div><div class="lv done"><i></i><small>Oskan</small></div><div class="lv"><i></i><small>Kasutan</small></div><div class="lv"><i></i><small>Õpetan</small></div></div><div class="evid">Harjutus tehtud, tööl veel kasutamata</div><a class="btn ghost" href="lood-uus--7cb11a.html">Lisa lugu</a></div><div class="skill"><div class="name"><b>Ajastatud ülesanded</b><span>Automaatsed korduvad tööd</span></div><div class="levels"><div class="lv done"><i></i><small>Tean</small></div><div class="lv"><i></i><small>Oskan</small></div><div class="lv"><i></i><small>Kasutan</small></div><div class="lv"><i></i><small>Õpetan</small></div></div><div class="evid">Tund läbitud, harjutus tegemata</div><a class="btn ghost" href="harjutus.html">Tee ülesanne</a></div><div class="skill"><div class="name"><b>Kliendidokumentide automatiseerimine</b><span>Mallid ja andmed kokku</span></div><div class="levels"><div class="lv"><i></i><small>Tean</small></div><div class="lv"><i></i><small>Oskan</small></div><div class="lv"><i></i><small>Kasutan</small></div><div class="lv"><i></i><small>Õpetan</small></div></div><div class="evid">Alustamata</div><a class="btn ghost" href="harjutus.html">Tee ülesanne</a></div></div></div><div class="col-side"><div class="card next"><div class="eyebrow" style="color:#8B4FB5">Sinu järgmine samm · 5 min</div><h3>Kasuta „Skillid“ päris töös</h3><p class="sub" style="margin-top:8px">Vali üks korduv tööülesanne, tee see AI-ga ja lisa enne/pärast lugu.</p><a class="btn" href="lood-uus--7cb11a.html">Lisa enne/pärast lugu</a></div><div class="card"><h3>Minu viimased lood</h3><p class="sub">Tõendid sellest, mis sinu töös muutus.</p><div class="story"><div class="t">Kliendipakkumise koostamine</div><div class="ba"><div class="b">Enne: <!-- -->180<!-- --> min</div><div class="a">Pärast: <!-- -->40<!-- --> min, <!-- -->4<!-- -->× kuus</div></div><span class="pill ok">Lisatud <!-- -->29. okt<!-- --> · <!-- -->Cowork oma failidega</span></div><div class="story"><div class="t">Hankedokumentide võrdlus</div><div class="ba"><div class="b">Enne: <!-- -->120<!-- --> min</div><div class="a">Pärast: <!-- -->25<!-- --> min, <!-- -->2<!-- -->× kuus</div></div><span class="pill ok">Lisatud <!-- -->12. sept<!-- --> · <!-- -->Dokumentide analüüs</span></div><div class="story"><div class="t">Kliendikirja mall</div><div class="ba"><div class="b">Enne: <!-- -->15<!-- --> min</div><div class="a">Pärast: <!-- -->5<!-- --> min, <!-- -->16<!-- -->× kuus</div></div><span class="pill ok">Lisatud <!-- -->22. aug<!-- --> · <!-- -->Promptimine</span></div></div><div class="card"><h3>Küsi kolleegilt</h3><p class="sub">Oskus, mida sa veel ei kasuta, aga kolleeg juba oskab.</p><div class="person"><div class="av" style="background:#E8BCCB">ML</div><div class="who"><b>Mari Lepp</b><br/><span class="muted">Ajastatud ülesanded<!-- --> · tase 4</span></div></div></div></div></div></div><!--$--><!--/$--></main>
+<div class="demo-pill">Demo · andmeid ei salvestata <a href="../index.html">Vaheta rolli</a></div>
+<div class="demo-toast" id="demo-toast"></div>
+<script>
+(function () {
+  var toast = document.getElementById("demo-toast"), t;
+  function say(msg) { toast.textContent = msg; toast.classList.add("on"); clearTimeout(t); t = setTimeout(function () { toast.classList.remove("on"); }, 3200); }
+  document.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var f = e.target, sel = f.querySelector("select[name=orgId]");
+    if (sel) { var name = sel.options[sel.selectedIndex].text; location.href = name.indexOf("Kaldaranna") >= 0 ? "../koolitaja-kaldaranna/koolitaja.html" : "../koolitaja/koolitaja.html"; return; }
+    if (/Logi välja/.test(f.textContent)) { location.href = "../index.html"; return; }
+    say("Demo: siin andmeid ei salvestata. Päris rakenduses (vt GitHub) see salvestub ja juht ning omanik näevad muutust.");
+  }, true);
+  var sel = document.querySelector("select[name=orgId]");
+  if (sel) sel.value = Array.prototype.find.call(sel.options, function (o) { return o.text.indexOf('Kaldaranna') < 0; }).value;
+
+  // Harjutuse kontroll (sama reeglipõhine loogika mis rakenduses)
+  var ta = document.querySelector(".le textarea"); if (!ta) return;
+  var checks = [
+    ["Mida teha", "Ütle, mida ülesanne iga kord teeb.", /(koosta|kokkuvõt|vaata läbi|loe|analüüsi|tee)/i],
+    ["Millal", "Lisa aeg ja sagedus, nt „iga esmaspäev kell 8:00“.", /(\d{1,2}[:.]\d{2}|iga (päev|nädal|esmaspäev|teisipäev|kolmapäev|neljapäev|reede|kuu)|igal)/i],
+    ["Kuhu ja mis kujul", "Lisa, kuhu kokkuvõte saata ja mis vormis, muidu jääb see kuhugi seisma.", /(saada|e-kirjaga|e-postiga|slack|teams|salvesta|tabelina)/i]
+  ];
+  var start = ta.value, pane = document.querySelector(".le .rpane"), tasks = document.querySelectorAll(".le .task");
+  function render(show) {
+    var res = checks.map(function (c) { return c[2].test(ta.value); }), ok = res.filter(Boolean).length;
+    tasks.forEach(function (el, i) { el.className = "task " + (show && res[i] ? "done" : show && !res[i] ? "now" : ""); el.querySelector(".tick").textContent = show && res[i] ? "✓" : String(i + 1); });
+    if (!show) { pane.innerHTML = '<div class="eyebrow" style="margin-bottom:12px">Tagasiside</div><p class="ptext muted">Kirjuta juhis ja vajuta „Kontrolli“.</p>'; return; }
+    var h = '<div class="eyebrow" style="margin-bottom:12px">Tagasiside</div><div class="score"><span class="num" style="font-size:40px">' + ok + ' / 3</span><span class="muted small">nõuet täidetud</span></div>';
+    checks.forEach(function (c, i) { h += '<div class="check ' + (res[i] ? "ok2" : "bad") + '"><span class="ci">' + (res[i] ? "✓" : "!") + '</span><div><b>' + c[0] + '</b><br><span class="muted small">' + (res[i] ? "Olemas." : c[1]) + '</span></div></div>'; });
+    if (ok === 3) h += '<div class="nextbox"><div class="mono small" style="color:#3B5200;margin-bottom:6px">Tehtud</div><p class="ptext" style="margin:0 0 12px 0">Oskus tõuseb tasemele <b>2 · Oskan</b>. Järgmine samm: tee sama oma päris kaustaga ja lisa enne/pärast lugu.</p><a class="btn" href="lood-uus.html">Lisa enne/pärast lugu</a></div>';
+    pane.innerHTML = h;
+  }
+  ta.addEventListener("input", function () { render(false); });
+  document.querySelectorAll(".le button").forEach(function (b) {
+    b.addEventListener("click", function () { if (/Lähtesta/.test(b.textContent)) { ta.value = start; render(false); } else render(true); });
+  });
+})();
+</script></body></html>

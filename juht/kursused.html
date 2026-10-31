@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="et" data-scroll-behavior="smooth" class="mVpuSG_variable a8vbQG_variable"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../_next/static/chunks/2esblawibb3st.css" data-precedence="next"/><title>AI Eesti Academy</title><meta name="description" content="Oskused ja mõju pärast koolitust"/><link rel="icon" href="../favicon.ico" sizes="48x48" type="image/x-icon"/><meta name="next-size-adjust" content=""/>
+<script>
+// Liikumise suund: paremal olev vaheleht = edasi, vasakul = tagasi
+document.addEventListener("click", function (e) {
+  var a = e.target.closest && e.target.closest("a"); if (!a) return;
+  var tabs = Array.prototype.slice.call(document.querySelectorAll(".tabs a"));
+  var i = tabs.indexOf(a), cur = tabs.findIndex(function (t) { return t.classList.contains("on"); });
+  try { sessionStorage.setItem("vt", i >= 0 && cur > i ? "nav-back" : "nav-forward"); } catch (_) {}
+});
+window.addEventListener("pagereveal", function (e) {
+  var d; try { d = sessionStorage.getItem("vt"); sessionStorage.removeItem("vt"); } catch (_) {}
+  if (e.viewTransition && d) e.viewTransition.types.add(d);
+});
+</script>
+<style>
+@view-transition { navigation: auto; }
+main.wrap { view-transition-name: page; }
+::view-transition-old(page) { animation: 150ms ease-in both vt-fade reverse; }
+::view-transition-new(page) { animation: 260ms ease-out 100ms both vt-fade, 400ms ease-out both vt-rise; }
+html:active-view-transition-type(nav-forward)::view-transition-old(page) { --slide-offset: -60px; animation: 150ms ease-in both vt-fade reverse, 400ms ease-in-out both vt-slide reverse; }
+html:active-view-transition-type(nav-forward)::view-transition-new(page) { --slide-offset: 60px; animation: 210ms ease-out 150ms both vt-fade, 400ms ease-in-out both vt-slide; }
+html:active-view-transition-type(nav-back)::view-transition-old(page) { --slide-offset: 60px; animation: 150ms ease-in both vt-fade reverse, 400ms ease-in-out both vt-slide reverse; }
+html:active-view-transition-type(nav-back)::view-transition-new(page) { --slide-offset: -60px; animation: 210ms ease-out 150ms both vt-fade, 400ms ease-in-out both vt-slide; }
+.demo-pill { position: fixed; left: 16px; bottom: 16px; z-index: 50; display: flex; gap: 10px; align-items: center; background: #141418; color: #fff; border-radius: 999px; padding: 8px 8px 8px 16px; font-size: 12px; box-shadow: 0 8px 24px rgba(20,20,40,.25); }
+.demo-pill a { background: #fff; color: #141418; border-radius: 999px; padding: 6px 12px; font-weight: 600; }
+.demo-toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 60; background: #141418; color: #fff; border-radius: 12px; padding: 12px 18px; font-size: 13px; opacity: 0; transition: opacity .2s; pointer-events: none; max-width: 90vw; }
+.demo-toast.on { opacity: 1; }
+</style></head><body><div hidden=""><!--$--><!--/$--></div><header class="top"><div class="logo"><span class="ai">AI</span><span class="ee">EESTI</span></div><div class="sep"></div><div class="prod">Academy</div><nav class="tabs"><a class="tab" href="juht.html">Tiimi ülevaade</a><a class="tab" href="kitsaskohad.html">Kitsaskohad</a><a class="tab" href="tiim.html">Tiimi oskused</a><a class="tab on" href="kursused.html">Minu kursused</a></nav><div class="spacer"></div><div class="user"><div class="who"><b>Liis Org</b><span class="muted">Juht<!-- --> · <!-- -->Põhjarannik Grupp</span></div><div class="avatar" style="background:#E8BCCB">LO</div><form action="" encType="multipart/form-data" method="POST"><input type="hidden" name="$ACTION_ID_00c7da064a50e7dff9b48e928464877792f9bb6889"/><button class="linkbtn" type="submit">Logi välja</button></form></div></header><main class="wrap"><div vt-update="none"><h1 class="title" style="font-size:52px;margin-top:44px">Minu <span class="blue">kursused</span></h1><div class="resume"><div class="rbar"></div><div style="flex:1"><div class="mono small" style="color:#8B4FB5;margin-bottom:4px">Jätka sealt, kus pooleli jäid</div><div style="font-size:17px;font-weight:600">Ajastatud ülesanne: nädalaaruanne</div><div class="muted small" style="margin-top:2px">Harjutus · ~5 min · lisas koolitaja</div></div><a class="btn" href="harjutus.html">Jätka →</a></div><div class="courses"><a class="course" style="background:#C5DDF2" href="kursused.html"><svg width="72" height="72" viewBox="0 0 72 72" aria-hidden="true"><g fill="#6E9FD6"><circle cx="36" cy="18" r="12"></circle><circle cx="36" cy="54" r="12"></circle><circle cx="18" cy="36" r="12"></circle><circle cx="54" cy="36" r="12"></circle><circle cx="23.3" cy="23.3" r="12"></circle><circle cx="48.7" cy="23.3" r="12"></circle><circle cx="23.3" cy="48.7" r="12"></circle><circle cx="48.7" cy="48.7" r="12"></circle><circle cx="36" cy="36" r="16"></circle></g></svg><div class="ct">Claude Max: I lend</div><div class="cd">Õpid Claude&#x27;i igapäevatöös kasutama ning kavandad, ehitad ja võtad kasutusele oma tööülesande AI-lahenduse.</div><div class="cspacer"></div><div class="cbar" style="background:#A9C3DD"><i style="width:0%"></i></div><div class="cmeta">24 õppetundi</div></a><a class="course" style="background:#C5DDF2" href="oskused.html"><svg width="72" height="72" viewBox="0 0 72 72" aria-hidden="true"><path fill="#6E9FD6" d="M14 66 V34 a22 22 0 0 1 44 0 V66 h-15 V34 a7 7 0 0 0 -14 0 V66 z"></path></svg><div class="ct">Põhjarannik Grupp: Claude Chat ja Cowork</div><div class="cd">Õpid Claude Chati ja Coworki igapäevatöös kasutama, alates headest promptidest kuni kliendidokumentide automatiseerimiseni.</div><div class="cspacer"></div><div class="cbar" style="background:#A9C3DD"><i style="width:47%"></i></div><div class="cmeta">47%, 33 õppetundi 70-st<!-- --> · 1 oskust tööl kasutusel</div></a><a class="course" style="background:#D6E89A" href="kursused.html"><svg width="72" height="72" viewBox="0 0 72 72" aria-hidden="true"><polygon fill="#3E7D5A" points="20,12 52,12 68,36 52,60 20,60 4,36"></polygon></svg><div class="ct">ChatGPT kursus</div><div class="cd">Õpid ChatGPT-d igapäevatöös kasutama alustest kuni Work agentideni, lihtsas keeles ja samm-sammult.</div><div class="cspacer"></div><div class="cbar" style="background:#BDD27E"><i style="width:0%"></i></div><div class="cmeta">24 õppetundi</div></a></div><div class="card" style="margin-top:24px"><div class="krow"><h3>Koolitaja lisatud materjalid</h3><span class="muted small">1<!-- --> tegemata · <!-- -->1<!-- --> tehtud</span></div><p class="sub">Koolitaja valib need sinu tiimi kitsaskohtade järgi.</p><div class="mat"><span class="kind">Video</span><div class="mt"><b>Koosolek → kokkuvõte ja ülesanded</b><span class="muted small">Lühivideo: kuidas Claude teeb koosoleku märkmetest kokkuvõtte ja järeltegevuste nimekirja.<!-- --> · ~<!-- -->12<!-- --> min · <!-- -->Müük ja kliendisuhted<!-- --> · <!-- -->27. okt</span></div><span class="pill ok">Tehtud</span></div><div class="mat"><span class="kind">Harjutus</span><div class="mt"><b>Ajastatud ülesanne: nädalaaruanne</b><span class="muted small">Seadista ajastatud ülesanne, mis koostab iga esmaspäev eelmise nädala kokkuvõtte.<!-- --> · ~<!-- -->5<!-- --> min · <!-- -->kogu firmale<!-- --> · <!-- -->11. okt</span></div><form action="" encType="multipart/form-data" method="POST"><input type="hidden" name="$ACTION_ID_40da590fd68d1911162f3b60755e6dd3afaf0a8d84"/><input type="hidden" name="materialId" value="f974ee4f-4be0-4ec2-ac26-f9f20eba8349"/><button class="btn sm" type="submit">Märgi tehtuks</button></form></div></div></div><!--$--><!--/$--></main>
+<div class="demo-pill">Demo · andmeid ei salvestata <a href="../index.html">Vaheta rolli</a></div>
+<div class="demo-toast" id="demo-toast"></div>
+<script>
+(function () {
+  var toast = document.getElementById("demo-toast"), t;
+  function say(msg) { toast.textContent = msg; toast.classList.add("on"); clearTimeout(t); t = setTimeout(function () { toast.classList.remove("on"); }, 3200); }
+  document.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var f = e.target, sel = f.querySelector("select[name=orgId]");
+    if (sel) { var name = sel.options[sel.selectedIndex].text; location.href = name.indexOf("Kaldaranna") >= 0 ? "../koolitaja-kaldaranna/koolitaja.html" : "../koolitaja/koolitaja.html"; return; }
+    if (/Logi välja/.test(f.textContent)) { location.href = "../index.html"; return; }
+    say("Demo: siin andmeid ei salvestata. Päris rakenduses (vt GitHub) see salvestub ja juht ning omanik näevad muutust.");
+  }, true);
+  var sel = document.querySelector("select[name=orgId]");
+  if (sel) sel.value = Array.prototype.find.call(sel.options, function (o) { return o.text.indexOf('Kaldaranna') < 0; }).value;
+
+  // Harjutuse kontroll (sama reeglipõhine loogika mis rakenduses)
+  var ta = document.querySelector(".le textarea"); if (!ta) return;
+  var checks = [
+    ["Mida teha", "Ütle, mida ülesanne iga kord teeb.", /(koosta|kokkuvõt|vaata läbi|loe|analüüsi|tee)/i],
+    ["Millal", "Lisa aeg ja sagedus, nt „iga esmaspäev kell 8:00“.", /(\d{1,2}[:.]\d{2}|iga (päev|nädal|esmaspäev|teisipäev|kolmapäev|neljapäev|reede|kuu)|igal)/i],
+    ["Kuhu ja mis kujul", "Lisa, kuhu kokkuvõte saata ja mis vormis, muidu jääb see kuhugi seisma.", /(saada|e-kirjaga|e-postiga|slack|teams|salvesta|tabelina)/i]
+  ];
+  var start = ta.value, pane = document.querySelector(".le .rpane"), tasks = document.querySelectorAll(".le .task");
+  function render(show) {
+    var res = checks.map(function (c) { return c[2].test(ta.value); }), ok = res.filter(Boolean).length;
+    tasks.forEach(function (el, i) { el.className = "task " + (show && res[i] ? "done" : show && !res[i] ? "now" : ""); el.querySelector(".tick").textContent = show && res[i] ? "✓" : String(i + 1); });
+    if (!show) { pane.innerHTML = '<div class="eyebrow" style="margin-bottom:12px">Tagasiside</div><p class="ptext muted">Kirjuta juhis ja vajuta „Kontrolli“.</p>'; return; }
+    var h = '<div class="eyebrow" style="margin-bottom:12px">Tagasiside</div><div class="score"><span class="num" style="font-size:40px">' + ok + ' / 3</span><span class="muted small">nõuet täidetud</span></div>';
+    checks.forEach(function (c, i) { h += '<div class="check ' + (res[i] ? "ok2" : "bad") + '"><span class="ci">' + (res[i] ? "✓" : "!") + '</span><div><b>' + c[0] + '</b><br><span class="muted small">' + (res[i] ? "Olemas." : c[1]) + '</span></div></div>'; });
+    if (ok === 3) h += '<div class="nextbox"><div class="mono small" style="color:#3B5200;margin-bottom:6px">Tehtud</div><p class="ptext" style="margin:0 0 12px 0">Oskus tõuseb tasemele <b>2 · Oskan</b>. Järgmine samm: tee sama oma päris kaustaga ja lisa enne/pärast lugu.</p><a class="btn" href="lood-uus.html">Lisa enne/pärast lugu</a></div>';
+    pane.innerHTML = h;
+  }
+  ta.addEventListener("input", function () { render(false); });
+  document.querySelectorAll(".le button").forEach(function (b) {
+    b.addEventListener("click", function () { if (/Lähtesta/.test(b.textContent)) { ta.value = start; render(false); } else render(true); });
+  });
+})();
+</script></body></html>

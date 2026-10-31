@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="et" data-scroll-behavior="smooth" class="mVpuSG_variable a8vbQG_variable"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../_next/static/chunks/2esblawibb3st.css" data-precedence="next"/><title>AI Eesti Academy</title><meta name="description" content="Oskused ja mõju pärast koolitust"/><link rel="icon" href="../favicon.ico" sizes="48x48" type="image/x-icon"/><meta name="next-size-adjust" content=""/>
+<script>
+// Liikumise suund: paremal olev vaheleht = edasi, vasakul = tagasi
+document.addEventListener("click", function (e) {
+  var a = e.target.closest && e.target.closest("a"); if (!a) return;
+  var tabs = Array.prototype.slice.call(document.querySelectorAll(".tabs a"));
+  var i = tabs.indexOf(a), cur = tabs.findIndex(function (t) { return t.classList.contains("on"); });
+  try { sessionStorage.setItem("vt", i >= 0 && cur > i ? "nav-back" : "nav-forward"); } catch (_) {}
+});
+window.addEventListener("pagereveal", function (e) {
+  var d; try { d = sessionStorage.getItem("vt"); sessionStorage.removeItem("vt"); } catch (_) {}
+  if (e.viewTransition && d) e.viewTransition.types.add(d);
+});
+</script>
+<style>
+@view-transition { navigation: auto; }
+main.wrap { view-transition-name: page; }
+::view-transition-old(page) { animation: 150ms ease-in both vt-fade reverse; }
+::view-transition-new(page) { animation: 260ms ease-out 100ms both vt-fade, 400ms ease-out both vt-rise; }
+html:active-view-transition-type(nav-forward)::view-transition-old(page) { --slide-offset: -60px; animation: 150ms ease-in both vt-fade reverse, 400ms ease-in-out both vt-slide reverse; }
+html:active-view-transition-type(nav-forward)::view-transition-new(page) { --slide-offset: 60px; animation: 210ms ease-out 150ms both vt-fade, 400ms ease-in-out both vt-slide; }
+html:active-view-transition-type(nav-back)::view-transition-old(page) { --slide-offset: 60px; animation: 150ms ease-in both vt-fade reverse, 400ms ease-in-out both vt-slide reverse; }
+html:active-view-transition-type(nav-back)::view-transition-new(page) { --slide-offset: -60px; animation: 210ms ease-out 150ms both vt-fade, 400ms ease-in-out both vt-slide; }
+.demo-pill { position: fixed; left: 16px; bottom: 16px; z-index: 50; display: flex; gap: 10px; align-items: center; background: #141418; color: #fff; border-radius: 999px; padding: 8px 8px 8px 16px; font-size: 12px; box-shadow: 0 8px 24px rgba(20,20,40,.25); }
+.demo-pill a { background: #fff; color: #141418; border-radius: 999px; padding: 6px 12px; font-weight: 600; }
+.demo-toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 60; background: #141418; color: #fff; border-radius: 12px; padding: 12px 18px; font-size: 13px; opacity: 0; transition: opacity .2s; pointer-events: none; max-width: 90vw; }
+.demo-toast.on { opacity: 1; }
+</style></head><body><div hidden=""><!--$--><!--/$--></div><header class="top"><div class="logo"><span class="ai">AI</span><span class="ee">EESTI</span></div><div class="sep"></div><div class="prod">Academy</div><nav class="tabs"><a class="tab" href="kursused.html">Minu kursused</a><a class="tab" href="oskused.html">Minu oskused</a><a class="tab" href="tiim.html">Tiimi oskused</a><a class="tab" href="kusitlus.html">Enne koolitust</a></nav><div class="spacer"></div><div class="user"><div class="who"><b>Rasmus Kask</b><span class="muted">Tiimiliige<!-- --> · <!-- -->Põhjarannik Grupp</span></div><div class="avatar" style="background:#F2DE7C">RK</div><form action="" encType="multipart/form-data" method="POST"><input type="hidden" name="$ACTION_ID_00c7da064a50e7dff9b48e928464877792f9bb6889"/><button class="linkbtn" type="submit">Logi välja</button></form></div></header><main class="wrap"><div vt-update="none"><div class="eyebrow" style="margin-top:44px">Minu oskused → Lisa lugu</div><h1 class="title">Lisa <span class="blue">enne/pärast</span> lugu</h1><p class="lead">Näita, kuidas üks tööülesanne muutus pärast AI kasutuselevõttu. Kui lisad loo, tõuseb sinu oskus tasemele „Kasutan tööl“.</p><form class="grid" action="" encType="multipart/form-data" method="POST"><input type="hidden" name="$ACTION_ID_4008f3abf170fd0efd1c2933fe3da8da1de209b05f"/><div class="col-main"><div class="card"><div class="field"><label>Millist oskust kasutasid?</label><div class="chips"><label class="chip"><input type="radio" required="" name="skill" value="5a94da19-622a-43bb-b547-2d8f076a613a"/>Promptimine</label><label class="chip"><input type="radio" required="" name="skill" value="23cca027-425f-4189-aab9-bbdd5366dbff"/>Dokumentide analüüs</label><label class="chip"><input type="radio" required="" name="skill" value="7c3880cb-e2d7-4e81-85d3-8c8385d7efc8"/>Cowork oma failidega</label><label class="chip"><input type="radio" required="" name="skill" value="f9b7dfac-5b62-4687-b8f0-da1d16b4f93f"/>Skillid</label><label class="chip"><input type="radio" required="" name="skill" value="b186ddbe-c91e-4819-b54d-283929665c0d"/>Ajastatud ülesanded</label><label class="chip"><input type="radio" required="" name="skill" value="b746b43e-33d1-4c76-9b1d-f4ab97c9f655"/>Kliendidokumentide automatiseerimine</label></div></div><div class="grid-form"><div class="field"><label for="task">Tööülesanne</label><input id="task" class="input" placeholder="Kliendipakkumise koostamine" required="" name="task"/></div><div class="field"><label for="bottleneck">Millise kitsaskohaga see seotud on?</label><select id="bottleneck" class="input" name="bottleneck"><option value="" selected="">Ei ole seotud</option><option value="aa1557c8-62ec-443a-9758-99c210107d47">Kliendi e-kirjadele vastamine</option><option value="e8804010-a6ba-4525-bf49-fa88548215c0">Pakkumiste koostamine</option><option value="90978124-dede-41e7-a8e4-f5fbe8e3dd50">Aruanded ja kokkuvõtted</option><option value="94d8df27-7af8-41dd-b2f5-a1f9fa5cebc2">Koosolekumärkmed ja järeltegevused</option><option value="1d4d1438-2712-4fc0-b780-6a0ca07ef3d4">CRM-i andmete sisestus</option><option value="ad703aad-b229-42f3-8c4b-a6df3899738e">Lepingute ülevaatus</option></select></div></div><div class="two"><div class="panel before"><h4>Enne</h4><div class="field"><label>Kuidas sa seda tegid?</label><textarea class="input area" name="before" required=""></textarea></div><div class="field"><label>Minutit ühe korra kohta</label><input class="input" inputMode="numeric" required="" name="beforeMin"/></div></div><div class="panel after"><h4>Pärast</h4><div class="field"><label>Kuidas sa seda nüüd teed?</label><textarea class="input area" name="after" required=""></textarea></div><div class="field"><label>Minutit ühe korra kohta</label><input class="input" inputMode="numeric" required="" name="afterMin"/></div></div></div><div class="grid-form" style="margin-top:20px"><div class="field"><label for="perMonth">Mitu korda kuus?</label><input id="perMonth" class="input" inputMode="numeric" required="" name="perMonth" value="4"/></div><div class="field"><label for="outcome">Mis veel paranes? (valikuline)</label><input id="outcome" class="input" placeholder="Pakkumine jõuab kliendini samal päeval" name="outcome"/></div></div><div class="field"><label>Kuidas see mõjutas sinu tööpäeva?</label><div class="chips"><label class="chip"><input type="radio" name="stress" value="Rohkem stressi"/>Rohkem stressi</label><label class="chip"><input type="radio" name="stress" value="Sama"/>Sama</label><label class="chip"><input type="radio" name="stress" checked="" value="Vähem stressi"/>Vähem stressi</label><label class="chip"><input type="radio" name="stress" value="Palju vähem stressi"/>Palju vähem stressi</label></div></div><div class="field"><label>Milleks vabanenud aja kasutasid?</label><div class="chips"><label class="chip"><input type="radio" name="freed" checked="" value="Rohkem aega klientidele"/>Rohkem aega klientidele</label><label class="chip"><input type="radio" name="freed" value="Arendustöö"/>Arendustöö</label><label class="chip"><input type="radio" name="freed" value="Vähem ületunde"/>Vähem ületunde</label><label class="chip"><input type="radio" name="freed" value="Muu"/>Muu</label></div></div><div class="krow"><span class="muted small">Lugu seotakse sinu baasjoonega küsitlusest.</span><button class="btn" type="submit">Lisa lugu</button></div></div></div><div class="col-side"><div class="card"><h3>Mis edasi juhtub?</h3><div class="steps"><div class="s"><div class="n">1</div><div><b>Oskus tõuseb</b><br/><span class="muted">Tasemele 3 „Kasutan tööl“.</span></div></div><div class="s"><div class="n">2</div><div><b>Kitsaskoht muutub</b><br/><span class="muted">Säästetud aeg arvutatakse kitsaskoha „praegu“ seisu sisse.</span></div></div><div class="s"><div class="n">3</div><div><b>Juht ja omanik näevad</b><br/><span class="muted">Edenemist tiimi ülevaates ja mõju firma vaates.</span></div></div></div></div></div></form></div><!--$--><!--/$--></main>
+<div class="demo-pill">Demo · andmeid ei salvestata <a href="../index.html">Vaheta rolli</a></div>
+<div class="demo-toast" id="demo-toast"></div>
+<script>
+(function () {
+  var toast = document.getElementById("demo-toast"), t;
+  function say(msg) { toast.textContent = msg; toast.classList.add("on"); clearTimeout(t); t = setTimeout(function () { toast.classList.remove("on"); }, 3200); }
+  document.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var f = e.target, sel = f.querySelector("select[name=orgId]");
+    if (sel) { var name = sel.options[sel.selectedIndex].text; location.href = name.indexOf("Kaldaranna") >= 0 ? "../koolitaja-kaldaranna/koolitaja.html" : "../koolitaja/koolitaja.html"; return; }
+    if (/Logi välja/.test(f.textContent)) { location.href = "../index.html"; return; }
+    say("Demo: siin andmeid ei salvestata. Päris rakenduses (vt GitHub) see salvestub ja juht ning omanik näevad muutust.");
+  }, true);
+  var sel = document.querySelector("select[name=orgId]");
+  if (sel) sel.value = Array.prototype.find.call(sel.options, function (o) { return o.text.indexOf('Kaldaranna') < 0; }).value;
+
+  // Harjutuse kontroll (sama reeglipõhine loogika mis rakenduses)
+  var ta = document.querySelector(".le textarea"); if (!ta) return;
+  var checks = [
+    ["Mida teha", "Ütle, mida ülesanne iga kord teeb.", /(koosta|kokkuvõt|vaata läbi|loe|analüüsi|tee)/i],
+    ["Millal", "Lisa aeg ja sagedus, nt „iga esmaspäev kell 8:00“.", /(\d{1,2}[:.]\d{2}|iga (päev|nädal|esmaspäev|teisipäev|kolmapäev|neljapäev|reede|kuu)|igal)/i],
+    ["Kuhu ja mis kujul", "Lisa, kuhu kokkuvõte saata ja mis vormis, muidu jääb see kuhugi seisma.", /(saada|e-kirjaga|e-postiga|slack|teams|salvesta|tabelina)/i]
+  ];
+  var start = ta.value, pane = document.querySelector(".le .rpane"), tasks = document.querySelectorAll(".le .task");
+  function render(show) {
+    var res = checks.map(function (c) { return c[2].test(ta.value); }), ok = res.filter(Boolean).length;
+    tasks.forEach(function (el, i) { el.className = "task " + (show && res[i] ? "done" : show && !res[i] ? "now" : ""); el.querySelector(".tick").textContent = show && res[i] ? "✓" : String(i + 1); });
+    if (!show) { pane.innerHTML = '<div class="eyebrow" style="margin-bottom:12px">Tagasiside</div><p class="ptext muted">Kirjuta juhis ja vajuta „Kontrolli“.</p>'; return; }
+    var h = '<div class="eyebrow" style="margin-bottom:12px">Tagasiside</div><div class="score"><span class="num" style="font-size:40px">' + ok + ' / 3</span><span class="muted small">nõuet täidetud</span></div>';
+    checks.forEach(function (c, i) { h += '<div class="check ' + (res[i] ? "ok2" : "bad") + '"><span class="ci">' + (res[i] ? "✓" : "!") + '</span><div><b>' + c[0] + '</b><br><span class="muted small">' + (res[i] ? "Olemas." : c[1]) + '</span></div></div>'; });
+    if (ok === 3) h += '<div class="nextbox"><div class="mono small" style="color:#3B5200;margin-bottom:6px">Tehtud</div><p class="ptext" style="margin:0 0 12px 0">Oskus tõuseb tasemele <b>2 · Oskan</b>. Järgmine samm: tee sama oma päris kaustaga ja lisa enne/pärast lugu.</p><a class="btn" href="lood-uus.html">Lisa enne/pärast lugu</a></div>';
+    pane.innerHTML = h;
+  }
+  ta.addEventListener("input", function () { render(false); });
+  document.querySelectorAll(".le button").forEach(function (b) {
+    b.addEventListener("click", function () { if (/Lähtesta/.test(b.textContent)) { ta.value = start; render(false); } else render(true); });
+  });
+})();
+</script></body></html>
